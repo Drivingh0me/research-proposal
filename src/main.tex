@@ -1,0 +1,118 @@
+% Main Preamble
+
+\documentclass[12pt, letterpaper]{article}
+\title{Practical Screening of\\
+Green Materials Synthesized via Knoevenagel\\
+Condensation for Application in Organic Solar Cells}
+\author{Caleb Griffin}
+\date{December, 2026}
+
+\usepackage{
+	xcolor, 
+	graphicx, 
+	titlesec, 
+	geometry, 
+	listings, 
+	amsmath,
+	hyperref,
+	siunitx
+}
+
+\usepackage[backend=bibtex, style=chem-acs, articletitle=true, chaptertitle=true]{biblatex} % Choose your style (e.g., numeric, authoryear)
+
+% This makes the sections the same font as the rest of the doc.
+\usepackage{titlesec}
+\titleformat*{\section}{\normalsize\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
+\titleformat*{\subsubsection}{\normalsize\bfseries}
+
+\addbibresource{IRProposal.bib}
+
+\usepackage{fontawesome5}
+\usepackage[default]{lato}
+\usepackage[T1]{fontenc}
+\geometry{left=1.0in, right=1.0in, top=1.0in, bottom=1.0in}
+
+\pagecolor{white}
+
+\hypersetup{
+	colorlinks=true,
+	citecolor=black,
+	linkcolor=black,
+	filecolor=magenta,
+	urlcolor=blue
+}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\pagebreak
+\tableofcontents
+\pagebreak
+
+\section{Overview}
+Organic Solar Cell (OSC) research has experienced incredible advancements over the
+previous 12 years \autocite{xuChallengingPM6likeDonor2023}
+. Power Conversion Efficiency (PCE) of modern OSCs produced in
+labs have exceeded 20\%, comparable to traditional silicon and perovskite cells2
+. Much
+of the advancement is credited to the development of PM6:Y6 donor:acceptor systems3
+.
+Current challenges in the development of commercially viable materials for OSCs are
+stability4 and solubility in green solvents for deposition. This proposal is the
+implementation of the Knoevenagel condensation5 in the preparation of PM6 and Y6
+inspired green material libraries and the screening of these libraries for preferred
+properties of irradiation stability and solubility in green solvents, followed by
+implementation in bulk heterojunction OSCs to determine PCE.
+
+The Knoevenagel condensation is an
+aldol condensation that typically forms
+conjugated systems. This reaction
+often has the greatest yields in
+aqueous sodium hydroxide solutions
+with small quantities of organic solvent
+present5. This condensation reaction
+has a much lower environmental
+impact than the Stille coupling
+commonly used to synthesize conjugated materials for OSCs.
+A combinatorial library of polymeric donor materials produced via the Knoevenagel
+polymerization can be screened by irradiation with light, and extraction with green
+solvents such as 2-methyl tetrahydrofuran. The surviving polymers can be examined for
+PCE with multiple NFAs.
+
+% Include intelectual merit, broader impacts, and 3 aims.
+
+\section{Background}
+Background.
+
+\subsection{Stille coupling reaction}
+Tin.
+
+\subsection{Previous work}
+
+\section{Proposed work}
+
+\subsection{Aim 1}
+Screening polymeric donor combinatorial libraries for stability by irradiation
+degradation and green solvent extraction.
+
+\subsection{Aim 2}
+Tin-free synthesis of small molecule and Y6-like NFAs and polymeric PM6-like
+donor combinatorial libraries by Knoevenagel condensation in water.
+
+\subsection{Aim 3}
+Implementation of optimized materials into bulk heterojunction OSCs to
+determine PCE.
+
+\subsection{Potential challenges and solutions}
+
+\printbibliography[
+    heading=bibnumbered,
+    title={References}
+]
+
+\section{Budget}
+
+
+\end{document}
